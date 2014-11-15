@@ -1,0 +1,17 @@
+﻿@using MvcExample005.Models
+@model IEnumerable<MvcExample005.Models.Department>
+  
+
+<table>         
+@{
+    foreach (Department aDepartment in Model)
+    {
+        <tr>
+            <td> @aDepartment.Code</td>
+            <td> @aDepartment.Name </td>
+        </tr>
+   
+           
+    }
+}
+</table>
